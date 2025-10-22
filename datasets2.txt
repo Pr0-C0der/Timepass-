@@ -1,0 +1,20 @@
+Recipe:
+
+1. Recipe1M / Recipe1M+ — ~1M recipes and millions of images; canonical for image↔recipe embedding (im2recipe).
+
+[https://im2recipe.csail.mit.edu/]
+
+2. RecipeQA: 
+A dataset for multimodal comprehension of cooking recipes. It consists of over 36K question-answer pairs automatically generated from approximately 20K unique recipes with step-by-step instructions and images. Each question in RecipeQA involves multiple modalities such as titles, descriptions or images, and working towards an answer requires (i) joint understanding of images and text, (ii) capturing the temporal flow of events, and (iii) making sense of procedural knowledge.
+
+[https://hucvl.github.io/recipeqa/]
+
+3. FoodX-251 — fine-grained food classification dataset; used by the iFood challenge; relevant when mapping dishes → typical ingredient sets. [https://arxiv.org/pdf/1907.06167]
+
+4. EPIC-KITCHENS — large-scale first-person (egocentric) kitchen videos captured in real homes with action/verb-noun annotations and dense narration; great for fine-grained interaction/action recognition in cooking contexts. [https://epic-kitchens.github.io/2018]
+
+
+Calorie Estimation:
+Nutrition5k — ~5k real plates captured with RGB + depth + video and per-dish high-accuracy nutrition annotations (component weights and nutrient totals); paper “Nutrition5k” (CVPR 2021) introduces the dataset and baseline nutrition prediction results. Ideal for direct calorie/macronutrient estimation from images. [https://openaccess.thecvf.com/content/CVPR2021/papers/Thames_Nutrition5k_Towards_Automatic_Nutritional_Understanding_of_Generic_Food_CVPR_2021_paper.pdf]
+
+PFID (Pittsburgh Fast-Food Image Dataset) — early food image dataset with thousands of images and some stereo/video captures; used historically for plate/food recognition and later calorie-estimation studies. PFID paper / dataset page. [https://scispace.com/pdf/pfid-pittsburgh-fast-food-image-dataset-3ts3kgxq00.pdf]
