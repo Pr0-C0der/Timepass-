@@ -1,0 +1,153 @@
+1. FruitSeg30
+U-Net trained on FruitSeg30 achieved Accuracy 92.57%, Precision 94%, Recall 91%, F1 92.5%, IoU 86% (dataset introduction paper/benchmark). [https://pmc.ncbi.nlm.nih.gov/articles/PMC11381999/]
+
+2. Fruit Recognition (SCUT / Zenodo)
+DenseNet-201: 98.94% accuracy; Xception: 97.73% accuracy on the Fruit Recognition dataset (https://www.mdpi.com/2079-9292/12/14/3132)
+
+3. Fruits-360 (Original / 100×100)
+DenseNet-201: 99.87% accuracy; Xception: 99.13% accuracy. (https://www.mdpi.com/2079-9292/12/14/3132)
+
+
+4. FruitNet (Indian Fruits, Quality)
+DenseNet201 pipeline (transfer learning + augmentation): 99.67% accuracy on 18-class “fruit-with-quality” task; 99.70% (6-class fruit) and 99.67% (3-class quality) on the same dataset. [https://arxiv.org/pdf/2212.04255]
+
+5. Fresh/Rotten/Formalin-mixed Fruit
+YOLO-V10 achieves 94.46% accuracy. [https://www.sciencedirect.com/science/article/pii/S2352340925004792]
+
+6. DeepFruits
+EfficientNet-B3 (multilabel) with KD + enhancements: mAP 90.2% on DeepFruit test split. [https://www.mdpi.com/2079-9292/13/16/3267]
+Dataset intro (Data in Brief) reports initial CNN (GoogLeNet) accuracy 94.72% as a starting point for classification experiments. [https://pmc.ncbi.nlm.nih.gov/articles/PMC10507127/]
+
+7. Date Fruit Detection (Zenodo)
+In the study “Application of AI in Date Fruit Detection—Performance Analysis of YOLO and Faster R-CNN Models” (2025) the authors trained on a publicly-available annotated date-fruit dataset: they report mAP@0.5 = 0.942 for YOLOv8n, and mAP@0.5 = 0.94 for Faster R‑CNN (ResNet-50 backbone) on their test set. [https://www.mdpi.com/2079-3197/13/6/149?utm_source=chatgpt.com]
+
+8. MinneApple
+Object Detection (on bounding boxes) using Faster RCNN (ResNet50): AP @ IoU=.50:.05:.95 = 0.438, AP @ IoU=.50 = 0.775. 
+Segmentation: U-Net (ResNet50 backbone with ImageNet pre-training) gives IoU = 0.685, Class IoU (Apple) = 0.410, Pixel Accuracy = 0.962. [https://github.com/nicolaihaeni/MinneApple?utm_source=chatgpt.com]
+
+9. LivingOptics Hyperspectral Fruit
+No reliable benchmark
+
+10. ACFR Orchard Fruit (MultiFruit 2016)
+The best F1-scores were achieved through the VGG16 Net, with 0.904, 0.908 and 0.775 for the apples, mangoes and almonds respectively
+
+
+11. Embrapa WGISD (Wine Grape)
+An object-detection / segmentation study on this dataset reports: Precision = 88.6%, Recall = 78.3%, F1-score = 83.1%, mAP = 87.7% on WGISD. (https://www.mdpi.com/2073-4395/13/8/1995?utm_source=chatgpt.com)
+
+12. LDD Grape Diseases
+Check this again, as results not provided. [https://arxiv.org/pdf/2206.10192]
+
+13. Raspberry PhenoSet
+YOLOV8-X achieves  Overall Precision of 0.721, Recall of 0.668, AP50 of 0.717, mAP50-95 of 0.548, and Accuracy of 0.693.
+
+14. AppleGrowthVision
+For BBCH stage classification (phenological stages) on this dataset: four CNN models achieved ≈99.9% accuracy/precision/recall/F1. (https://arxiv.org/pdf/2505.14029)
+
+15. Hyperspectral Giessen Fruits/Vegetables
+[https://sci-hub.se/10.1364/JOSAA.35.00B256]
+
+18. KFuji RGB-DS
+Faster R-CNN using all modalities (RGB + Depth + range-corrected IR) on KFuji achieved F1-score = 0.898 and AP = 94.8%, with a +4.46% F1 improvement vs. RGB-only. These are the canonical results reported in the KFuji paper. [https://upcommons.upc.edu/server/api/core/bitstreams/dfb0ed40-5998-4d44-97a3-a56121ed2a5d/content, https://pmc.ncbi.nlm.nih.gov/articles/PMC6685673/]
+
+
+19. LivingOptics Hyperspectral Orchard
+[https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13373/1337304/A-case-study-on-the-integration-of-a-snapshot-hyperspectral/10.1117/12.3042114.short]
+
+20. DeepHS Fruit v2
+Fruit-HSNet (2025) reports a new SOTA on DeepHS Fruit, with overall accuracy = 70.73% for fruit ripeness classification (multi-fruit, multi-camera). [https://www.researchgate.net/profile/Anna-Fabijanska/publication/389455883_Fruit-HSNet_A_Machine_Learning_Approach_for_Hyperspectral_Image-Based_Fruit_Ripeness_Prediction/links/67c32db4f5cb8f70d5c485ec/Fruit-HSNet-A-Machine-Learning-Approach-for-Hyperspectral-Image-Based-Fruit-Ripeness-Prediction.pdf?origin=publication_detail&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uRG93bmxvYWQiLCJwcmV2aW91c1BhZ2UiOiJwdWJsaWNhdGlvbiJ9fQ]
+
+
+
+21. Hyperspectral Blueberries (Zenodo)
+The dataset was used for developing machine learning models for differentiating between normal and defective blueberries, achieving an overall accuracy of 96.6%. [https://arxiv.org/html/2510.07556v1]
+
+
+22. Fuji-SfM
+A paper titled Simultaneous Fruit Detection and Size Estimation Using Multitask Deep Neural Networks used RGB-D data (which appears to include or align with the Fuji-SfM dataset) and reported an F1-score for apple detection of 0.88 and a mean absolute diameter estimation error of 5.64 mm. [https://imatge.upc.edu/web/sites/default/files/pub/aFerrer-Ferrer.pdf]
+
+
+23. FruQ-DB
+No reliable benchmark
+
+24. Strawberry-DS
+SLFCNet achieves Precision of	0.947, and Recall of	0.932. [https://pmc.ncbi.nlm.nih.gov/articles/PMC11784530/]
+
+25. Ripe Strawberries Detection (Kaggle)
+No reliable benchmark
+
+
+26. Banana Ripe/Unripe (Mendeley)
+sed in Mango and Banana Ripeness Detection based on Lightweight YOLOv8 (2024). On the ripe/unripe task, the best variant reported: YOLOv8s — mAP=0.8897, Recall=0.9991; YOLOv8m — Precision=0.9995 [https://ojs.uajy.ac.id/index.php/jbi/article/view/8895]
+
+27. Banana Classification (4 stages)
+Used in Banana quality classification using lightweight CNN model with microservice integration system (Engineering and Applied Science Research, 2025). Their customized CST-MobileNetV2 achieved Accuracy = 98.15% on this 4-class dataset. [https://ph01.tci-thaijo.org/index.php/easr/article/download/260433/174769]
+
+28. Mango Variety (PMC)
+No reliable benchmark
+
+29. MangoImageBD
+A public mirror of the figure reports Accuracy = 98.07%, Precision = 95.93%, Recall = 95.67%, F1-score = 95.73% for 15-class variety identification. [https://www.sciencedirect.com/science/article/pii/S2352340925006328]
+
+30. MangoClassify-12
+No reliable benchmark
+
+
+31. CitDet Citrus Fruit Detection
+Best Detection Model: YOLOv7 (45.5 mAP on tiled dataset, AP50 = 83.1).
+Best Yield Correlation: Filter-detect-count method (R² = 0.793). [https://arxiv.org/pdf/2309.05645]
+
+32. Citrus Fruits and Leaves (Diseases)
+the proposed technique … achieves 97% classification accuracy on citrus disease image gallery dataset, 89% on combined dataset and 90.4% on our local dataset. [https://pubmed.ncbi.nlm.nih.gov/31516936/]
+
+33. Fruit-Box / FruitNet Box
+The origin of the fruits was identified with 98.33% accuracy. A mean average precision score of 95.90% by YOLOv7.
+
+
+Nutritional Information: 
+
+1. USDA FoodData Central
+Used to train ML models that predict micronutrient profiles in cooked foods from raw composition; models achieved ~31% lower error (RMSE) on average vs. retention-factor baselines. [https://pubmed.ncbi.nlm.nih.gov/37151381/?utm_source=chatgpt.com]
+
+2. USDA FNDDS
+Used to predict unreported micronutrients from nutrition label data for 5,624 foods; classification accuracy ≥0.80 for all vitamins/minerals, with best 0.94 for vitamin B12 and 0.94 for phosphorus; regression R² ranged 0.28 (Mg) to 0.92 (Mn). 
+Used to train FoodProX to classify NOVA processing levels from nutrient panels; AUCs (with nutrient-only inputs) on NOVA classes were 0.9804 (NOVA1), 0.9632 (NOVA2), 0.9696 (NOVA3), 0.9789 (NOVA4) under cross-validation.
+[https://pubmed.ncbi.nlm.nih.gov/37043261/?utm_source=chatgpt.com, https://www.nature.com/articles/s41467-023-37457-1]
+
+3. Open Food Facts
+Open Food Facts product records (≈233,831 with heuristic NOVA labels) used to evaluate FoodProX. Nutrients + additives model: AUCs = 0.9926 (NOVA1), 0.9878 (NOVA2), 0.9653 (NOVA3), 0.9782 (NOVA4). Nutrients-only model: AUCs = 0.9880 (NOVA1), 0.9860 (NOVA2), 0.9320 (NOVA3), 0.9508 (NOVA4). [https://www.nature.com/articles/s41467-023-37457-1]
+
+
+
+Market Prices/Trade/Analytics:
+
+1. India Agmarknet Prices
+
+2. FAOSTAT (Fruits)
+
+
+3. Eurostat Fruit & Veg Consumption
+
+
+
+
+Visual Question Answering (VQA):
+
+1. PlantVillageVQA
+Reported benchmark on the dataset paper’s “Model Applications and Benchmarks” section (Table 10): CLIP accuracy 0.6148, LXMERT 0.6034, FLAVA 0.3432. Text-generation metrics also reported (e.g., CLIP BLEU 0.2452, METEOR 0.4476, ROUGE-1 0.7323, ROUGE-L 0.7153) [https://arxiv.org/html/2508.17117v2]
+
+2. OK-VQA (Food / Cooking subset)
+From the original CVPR 2019 paper (Table 2), “Cooking & Food (CF)” accuracy by model:
+Q-Only 16.92, MLP 21.81, ArticleNet 5.69, BAN 27.90, MUTAN 27.73, BAN+ArticleNet 29.12, MUTAN+ArticleNet 29.94, BAN/AN oracle 30.46, MUTAN/AN oracle 30.53. [https://openaccess.thecvf.com/content_CVPR_2019/papers/Marino_OK-VQA_A_Visual_Question_Answering_Benchmark_Requiring_External_Knowledge_CVPR_2019_paper.pdf]
+
+3. IndiFoodVQA
+Zero-shot (Appendix Table 11 comparison): LLaVA-2 top-1 accuracy 43.78% (Original triples), 41.33–41.54% with 1-/2-hop triples; LLaVA-1.5 33.46% (Original). 
+Fine-tuned on llava-llama2-13b (Table 4): best top-1 accuracy 69.22% (No external triples); with 1-hop triples 67.15%; with 2-hop triples 66.59%. Rouge-L/BLEU/METEOR for rationales also reported. [https://aclanthology.org/2024.findings-eacl.78.pdf]
+
+4. WC-VQA (WorldCuisines VQA)
+Proprietary: GPT-4o average accuracy — MCQ 82.21%, OEQ 27.83%; GPT-4o Mini MCQ 72.80%, OEQ 16.54%; Gemini 1.5 Flash MCQ 77.25%, OEQ 16.12%.
+Open-source: LLaVA-1.6 Vicuna-7B average — MCQ 36.28%, OEQ 4.08%. [https://aclanthology.org/2025.naacl-long.167.pdf]
+
+
+5. CulturalVQA
+Project page & EMNLP 2024 paper: models evaluated using LAVE; best closed-source (GPT-4 family) ranges ~43%–72% across countries, with notable gaps vs. open-source models and lower scores on African-Islamic cultures (e.g., 29.7% gap for Ethiopia). The site also reports facet-wise results (e.g., GPT-4 highest on rituals >60%, ~53% on clothing). [https://culturalvqa.org/]
